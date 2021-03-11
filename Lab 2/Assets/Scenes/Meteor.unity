@@ -121,83 +121,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &642761038
+--- !u!1 &642761038 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1780818693677934338, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1780818693044020812}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 642761039}
-  - component: {fileID: 642761040}
-  m_Layer: 0
-  m_Name: MeteorGround
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &642761039
-Transform:
+--- !u!65 &642761039
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642761038}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.062660694, y: 0.6368332, z: -0.12516403}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1039010875}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &642761040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642761038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f366490765d7e694fbbc725d82feb59a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vfx: {fileID: 1213825173}
-  startPoint: {fileID: 1039010875}
-  endPoint: {fileID: 642761039}
---- !u!1 &1039010874
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1039010875}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1039010875
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039010874}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.07, y: 9.63, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 642761039}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Size: {x: 50, y: 0.1, z: 50}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1067522017
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,6 +401,80 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1001 &1780818693044020812
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1780818693677934338, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_Name
+      value: MeteorGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934339, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934339, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.062660694
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934339, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6368332
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934339, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.12516403
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934339, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934339, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934339, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934339, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934339, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934339, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934339, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780818693677934364, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
+        type: 3}
+      propertyPath: vfx
+      value: 
+      objectReference: {fileID: 1213825173}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee956b7bc7627614fb8d8d79ec97cfc8, type: 3}
 --- !u!1001 &2134946505037245357
 PrefabInstance:
   m_ObjectHideFlags: 0
