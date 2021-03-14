@@ -36,7 +36,7 @@ public class MeteorMove : MonoBehaviour
         if (impactPrefab != null)
 		{
             var impactVFX = Instantiate(impactPrefab, pos, rot);
-            Destroy(impactVFX, 5);
+            Destroy(impactVFX, 15);
         }
 
         if (trails.Count > 0)
