@@ -376,7 +376,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 55
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -447,10 +447,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 724795427, guid: ee956b7bc7627614fb8d8d79ec97cfc8, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ad85245836b344a41a2bddc41dc17f2a, type: 2}
     - target: {fileID: 1780818693677934338, guid: ee956b7bc7627614fb8d8d79ec97cfc8,
         type: 3}
       propertyPath: m_Name
@@ -523,7 +519,7 @@ PrefabInstance:
     - target: {fileID: 2134946503832988472, guid: 55bad687b918406459174d5e81e6f242,
         type: 3}
       propertyPath: m_Name
-      value: MeteorContainer
+      value: Meteor
       objectReference: {fileID: 0}
     - target: {fileID: 2134946503832988472, guid: 55bad687b918406459174d5e81e6f242,
         type: 3}
