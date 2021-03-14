@@ -4830,7 +4830,7 @@ GameObject:
   - component: {fileID: 1213825174}
   - component: {fileID: 1213825175}
   m_Layer: 0
-  m_Name: MeteorContainer
+  m_Name: Meteor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4867,6 +4867,8 @@ MonoBehaviour:
   force: 6
   impactPrefab: {fileID: 7832218920236959246, guid: 3074e525ab841064990685e6ea5b478e,
     type: 3}
+  trails:
+  - {fileID: 2000664777}
 --- !u!54 &339509645791477842
 Rigidbody:
   m_ObjectHideFlags: 0
