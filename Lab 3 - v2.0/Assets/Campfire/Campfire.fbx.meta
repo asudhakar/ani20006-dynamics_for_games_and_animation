@@ -1,14 +1,14 @@
 fileFormatVersion: 2
 guid: 20cefda7b9ad27b4190fd6e74ca9710a
 ModelImporter:
-  serializedVersion: 20101
+  serializedVersion: 20200
   internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Campfire_MAT
-    second: {fileID: 2100000, guid: 4517b0d20e582dd4595707c2d67c51cd, type: 2}
+    second: {fileID: 2100000, guid: 1888d0d50a0b1c34a893ffe7b68fe6a7, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -78,7 +78,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 1
+  importAnimation: 0
   humanDescription:
     serializedVersion: 3
     human: []
@@ -100,6 +100,7 @@ ModelImporter:
   animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
