@@ -5,26 +5,41 @@ using UnityEngine;
 public class KillFire : MonoBehaviour
 {
 	[SerializeField] private float fireKillRate;
-    private ParticleSystem partSystem;
+	[SerializeField] private float lightKillRate;
+    private ParticleSystem fireSystem;
+    private LightControl lightControl;
+    private ParticleSystem smokeSystem;
     private List<ParticleCollisionEvent> collisionEvents = new List<ParticleCollisionEvent>();
 	private float emissionOverTime;
 
 	private void Awake()
 	{
-        partSystem = GetComponent<ParticleSystem>();
+		lightControl = FindObjectOfType<LightControl>();
+		fireSystem = GetComponent<ParticleSystem>();
 	}
 
 	private void Start()
 	{
-		var emission = partSystem.emission;
+		var emission = fireSystem.emission;
 		emissionOverTime = emission.rateOverTime.constant;
 	}
 
-	private void OnParticleTrigger()
+	//private void OnParticleTrigger()
+	//{
+	//	emissionOverTime -= fireKillRate;
+	//	var emission = fireSystem.emission;
+	//	emission.rateOverTime = emissionOverTime;
+	//}
+
+	private void OnTriggerEnter(Collider other)
 	{
-		Debug.Log("Collided");
-		emissionOverTime -= fireKillRate;
-		var emission = partSystem.emission;
-		emission.rateOverTime = emissionOverTime;
+		if (other.gameObject.layer == 4)
+		{
+			emissionOverTime -= fireKillRate;
+			var emission = fireSystem.emission;
+			emission.rateOverTime = emissionOverTime;
+
+			lightControl.MaxIntensity -= lightKillRate;
+		}
 	}
 }
