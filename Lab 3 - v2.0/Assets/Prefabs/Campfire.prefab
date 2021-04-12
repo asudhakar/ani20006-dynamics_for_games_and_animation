@@ -5126,9 +5126,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5140007658327761474}
+  - component: {fileID: 7810766595886850403}
   - component: {fileID: 5140007658327761475}
   - component: {fileID: 5140007658327761472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5153,6 +5154,19 @@ Transform:
   m_Father: {fileID: 5140007657423604737}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &7810766595886850403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5140007658327761473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8eaef089cd38e4595a187c6bb47595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireKillRate: 0.08
 --- !u!198 &5140007658327761475
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -8733,12 +8747,12 @@ ParticleSystem:
   CollisionModule:
     enabled: 0
     serializedVersion: 4
-    type: 0
+    type: 1
     collisionMode: 0
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
-    multiplyColliderForceByCollisionAngle: 1
+    multiplyColliderForceByCollisionAngle: 0
     m_Planes: []
     m_Dampen:
       serializedVersion: 2
@@ -8796,7 +8810,7 @@ ParticleSystem:
     m_Bounce:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -8904,19 +8918,19 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 16
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 2
-    inside: 1
+    inside: 0
     outside: 0
-    enter: 0
+    enter: 2
     exit: 0
     colliderQueryMode: 0
     radiusScale: 1
@@ -9925,6 +9939,20 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!64 &947079997
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5446418112478224867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4188331113201836802, guid: 20cefda7b9ad27b4190fd6e74ca9710a, type: 3}
 --- !u!1 &8274807431675838472
 GameObject:
   m_ObjectHideFlags: 0
@@ -14786,6 +14814,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20cefda7b9ad27b4190fd6e74ca9710a, type: 3}
+--- !u!1 &5446418112478224867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 20cefda7b9ad27b4190fd6e74ca9710a, type: 3}
+  m_PrefabInstance: {fileID: 5140007657776192690}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4674244683045862233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 20cefda7b9ad27b4190fd6e74ca9710a, type: 3}
