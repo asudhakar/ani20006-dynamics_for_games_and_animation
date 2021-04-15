@@ -64135,8 +64135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   campfireLight: {fileID: 790264744}
   endIntensity: 100
-  intensityGap: 15
-  lerpDuration: 2
+  intensityGap: 30
+  lerpDuration: 1
 --- !u!114 &2116711785
 MonoBehaviour:
   m_ObjectHideFlags: 0
