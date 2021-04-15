@@ -5,12 +5,17 @@ using UnityEngine;
 public class KillFire : MonoBehaviour
 {
 	[SerializeField] private float fireKillRate;
+	[SerializeField] private float smokeIncreaseRate;
+	[SerializeField] private float smokeStartLifetime;
+	[SerializeField] private float flameDecreaseThreshold;
 	[SerializeField] private float lightKillRate;
+	[SerializeField] private ParticleSystem smokeSystem;
+	[SerializeField] private ParticleSystem emberSystem;
+
     private ParticleSystem fireSystem;
     private LightControl lightControl;
-    private ParticleSystem smokeSystem;
-    private List<ParticleCollisionEvent> collisionEvents = new List<ParticleCollisionEvent>();
-	private float emissionOverTime;
+	private float flameEmissionOverTime;
+	private bool isSet;
 
 	private void Awake()
 	{
@@ -21,23 +26,30 @@ public class KillFire : MonoBehaviour
 	private void Start()
 	{
 		var emission = fireSystem.emission;
-		emissionOverTime = emission.rateOverTime.constant;
+		flameEmissionOverTime = emission.rateOverTime.constant;
 	}
-
-	//private void OnParticleTrigger()
-	//{
-	//	emissionOverTime -= fireKillRate;
-	//	var emission = fireSystem.emission;
-	//	emission.rateOverTime = emissionOverTime;
-	//}
 
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.layer == 4)
 		{
-			emissionOverTime -= fireKillRate;
-			var emission = fireSystem.emission;
-			emission.rateOverTime = emissionOverTime;
+			flameEmissionOverTime -= fireKillRate;
+			var flameEmission = fireSystem.emission;
+			flameEmission.rateOverTime = flameEmissionOverTime;
+
+			if (!isSet && flameEmissionOverTime <= flameDecreaseThreshold)
+			{
+				var smokeEmission = smokeSystem.emission;
+				smokeEmission.rateOverTime = smokeIncreaseRate;
+
+				var smokeMain = smokeSystem.main;
+				smokeMain.startLifetime = smokeStartLifetime;
+
+				var emberEmission = emberSystem.emission;
+				emberEmission.rateOverTime = 1f;
+
+				isSet = true;
+			}
 
 			lightControl.MaxIntensity -= lightKillRate;
 		}
