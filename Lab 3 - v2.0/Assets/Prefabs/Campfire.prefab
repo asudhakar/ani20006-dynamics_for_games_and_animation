@@ -4926,7 +4926,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 102.9679
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4969,7 +4969,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 2423
+  m_ColorTemperature: 2423.0002
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -4996,7 +4996,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 1293.9329
+  m_Intensity: 0
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -5106,7 +5106,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5140007657984325798}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 878afae61abf8544494556dd95cb10f7, type: 2}
   m_CullingMode: 0
@@ -5129,6 +5129,7 @@ GameObject:
   - component: {fileID: 7810766595886850403}
   - component: {fileID: 5140007658327761475}
   - component: {fileID: 5140007658327761472}
+  - component: {fileID: 2119312075}
   m_Layer: 6
   m_Name: Fire
   m_TagString: Untagged
@@ -5166,7 +5167,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8eaef089cd38e4595a187c6bb47595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireKillRate: 0.08
+  fireKillRate: 0.04
+  smokeIncreaseRate: 50
+  smokeStartLifetime: 4
+  flameDecreaseThreshold: 7.5
+  lightKillRate: 0.1955
+  smokeSystem: {fileID: 2384482589711788834}
+  emberSystem: {fileID: 5302594233368744594}
 --- !u!198 &5140007658327761475
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -8934,7 +8941,8 @@ ParticleSystem:
     exit: 0
     colliderQueryMode: 0
     radiusScale: 1
-    primitives: []
+    primitives:
+    - {fileID: 0}
   SubModule:
     serializedVersion: 2
     enabled: 0
@@ -9939,6 +9947,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!65 &2119312075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5140007658327761473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7183486, y: 1.7781956, z: 1.1844779}
+  m_Center: {x: 0.08188608, y: 0.11626612, z: 0.35210815}
 --- !u!64 &947079997
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10817,9 +10838,9 @@ ParticleSystem:
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
-      minMaxState: 3
-      scalar: 93.42
-      minScalar: 60
+      minMaxState: 0
+      scalar: 5
+      minScalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -11440,30 +11461,30 @@ ParticleSystem:
     enabled: 1
     x:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0
+      minMaxState: 1
+      scalar: 0.4247394
       minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0
+          value: -0.19896698
           inSlope: 0
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
+          inWeight: 0
+          outWeight: 0
         - serializedVersion: 3
           time: 1
-          value: 0
-          inSlope: 0
-          outSlope: 0
+          value: -1
+          inSlope: -2
+          outSlope: -2
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
+          inWeight: 0
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
@@ -11493,7 +11514,7 @@ ParticleSystem:
         m_RotationOrder: 4
     y:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 1
       scalar: 0.22
       minScalar: 0
       maxCurve:
@@ -11546,7 +11567,7 @@ ParticleSystem:
         m_RotationOrder: 4
     z:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 1
       scalar: 0
       minScalar: 0
       maxCurve:
