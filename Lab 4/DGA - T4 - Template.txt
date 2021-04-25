@@ -1,0 +1,51 @@
+Dynamics for Games and Animation
+======================================================
+# Task 4 Report - Dynamics Critique
+Student Name:
+Student ID:
+
+======================================================
+# Resources Used
+> List (with names/titles) any websites/links that you found useful/helpful - don’t include things like search engines
+
+======================================================
+# Task Details
+## Scene/Video Description
+> Describe what is going on in the video, in a literal sense (i.e. provide a text description of what is literally happening in the video as it plays).
+
+
+## Optimisation and Performance
+> How ‘heavy’ or ‘expensive’ do you think are the systems in what you were critiquing? Why are they heavy/light?
+
+
+## Dynamic Systems
+> Identify any dynamic systems you can see. This does not need to be 'accurate' to the original file (if the video is from another student): write what you might use yourself, to achieve the same result. Explain/justify.
+> If applicable, discuss other potential systems that could be used as well.
+
+
+## Forces, Movement, and Randomization
+> Similar as above. Identify potential force objects that are used, or that you might use should you try to achieve the same result. Explain/justify.
+
+
+## Physics Phenomena Discussion
+> On a more theoretical level, identify and discuss physical phenomena that you think is being addressed (and how well/deeply it is being shown) in the video.
+> Also identify what phenomena is not being addressed very well, that could/should be shown, or made more prominent.
+> Reference links to footage/phenomena/wiki articles will be useful here too.
+
+
+======================================================
+# Insights/Questions/Comments
+##### Q: Technical Critique - What sorts of things do you think could be focused on to make the motion/physics better? What would you do to make the scenario/video better?
+A:
+
+##### Q: If applicable, how much discussion did you have with the author of the video you were critiquing, for this report? What sorts of information was helpful to discuss?
+A:
+
+##### Q: How did you find the experience of having to critique a piece of work, rather than creating your own?
+A:
+
+##### Q: What was easier/harder in this task than you expected? Why?
+A:
+
+##### Q: Any other comments/feedback/ideas?
+A:
