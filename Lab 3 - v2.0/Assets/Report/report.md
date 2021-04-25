@@ -1,6 +1,3 @@
-
-
-
 Dynamics for Games and Animation
 ======================================================
 # Task 3 Report - Multiple Systems
@@ -34,8 +31,8 @@ How to [write basic compute shaders](https://youtu.be/BrZ4pWwkpto)
 Writing [HLSL for raymarching](https://www.youtube.com/playlist?list=PL3POsQzaCw53iK_EhOYR39h1J9Lvg-m-g)
 > Which software did you use for this task?
 
-Unity
-Photoshop
+Unity: Constructing/exporting the scene
+Photoshop: Making textures
 
 ======================================================
 # Task Details
@@ -45,8 +42,8 @@ Photoshop
 **Event summary:** A campfire starting and being extinguished by water.
 **Video References:**
 - [Overview](https://youtu.be/0O3Bj8JFcTc) of the entire FX
-- FX in [Slowmo](https://youtu.be/yGbodsAV03M)
-- Campfire on [loop](https://youtu.be/qsOUv9EzKsg)
+- Fire extinguishing in [slowmo](https://youtu.be/yGbodsAV03M)
+- Fire burning wood on [loop](https://youtu.be/qsOUv9EzKsg)
 
 ## Dynamic Systems and Forces
 > Referring to the physics phenomena behind the interactions of your scenario, are there any real-world interactions you were trying to mimic?
@@ -61,24 +58,38 @@ Describe/explain, and use diagrams/reference images to support.
 	 - Embers (amount/frequency dependent on firewood material)
 
 ![enter image description here](https://www.rei.com/dam/van_dragt_041117_campfire_structure_types_composite.jpg)
+
 Fig 1. Campfire reference image
 
 **Phase 2 - Extinguishing the fire**
  - Fire being extinguished by water 
 	 - Flame shrinks overtime as more water is poured into the wood
 	 - Rate of embers emitting reduces as more water is poured
-	 - Just before the flame disappears, a lot more smokes will be emitted (they also seem to have a much longer lifetime as well. Wind also seem have a huge effect on it)
+	 - Just before the flame disappears, a lot more smokes will be emitted (they also seem to have a much longer lifetime, and they seem to be heavily affected by wind, probably because they're much denser now)
  - Water splashes from being poured into the firewood
 	 - Has a certain viscosity level (friction with the surface and other water particles)
   - There might have been water droplets being vaporized after touching the flame, but in the video this wasn't noticeable. So, while it might have happened, I won't be replicating this aspect to save performance.
  
 ![enter image description here](https://www.rei.com/dam/van_dragt_041117_0216_extinguishing.jpg)
+
 Fig. 2 How much smoke can be emitted from extinguishing a campfire with water
 
 ## Scene Composition Overview
 > As a summary/overview, list and describe the objects you have used/created in your software/file (i.e. "what is it, why is it there, what is it for?")
 > Include a screenshot showing the composition in the software editor (showing force icons, object tree, names of objects, etc...)
 
+![enter image description here](https://cdn.discordapp.com/attachments/713735780412948554/835706085989285918/unknown.png)
+
+Fig. 3 Scene overview
+- A container for ramp and campfire: This exists because I wanted to only have 1 animation component controlling everything that happens in the scene. To do that, the object that with the component has to be the parent for all child objects that I want to control, which in this case is the ramp's hatch and the many variables for the fire fx.
+- Ramp: Consists of 2 planes intersecting each other and 1 in the middle as a hatch to hold the water particles.
+- Campfire
+	- Model
+	- Particle systems
+		- Windzone: This helps shaping the fire into the typical teardrop shape
+![enter image description here](https://png.pngtree.com/png-vector/20190226/ourmid/pngtree-fire-logo-icon-design-template-vector-png-image_705401.jpg)
+		- Light (this is childed to the fire fx rather than the root object since it belongs to the fx, so moving the light with the fx makes more sense than moving the light with the campfire model).
+- Water particles: This exists instead of a shuriken particle system for reasons noted below.
 
 ## Systems Used
 > What systems did you use (rigid body, particles, cloth, hair/fur, etc…), and what are some key parameters/settings did you use/why?
@@ -86,23 +97,28 @@ Describe/explain, and use diagrams/reference images to support.
 
 - Flame, smoke and embers: shuriken particle system was used.
 - The water could've been simulated using the shuriken system, but the built-in collision module was hard to use, and they didn't support the use of physics material. 
+
 ![enter image description here](https://docs.unity3d.com/cn/2018.3/uploads/Main/PartSysCollisionInsp.png)
-Fig. 3 Collision module for the shuriken system (there are no slots to insert the physics material, unlike a normal collider does)
+
+Fig. 4 Collision module for the shuriken system (there are no slots to insert the physics material, unlike a normal collider does)
+
 ![enter image description here](https://docs.unity3d.com/uploads/Main/Inspector-PhysicMaterial.png)
-Fig. 4 A physics material
-A physics material allows control over an object's friction and bounciness against a surface, and not being able include this meant it would be difficult to make the system behave like water. So, I decided to make the fluid system from scratch by creating/duplicating multiple spheres in the scene, giving them a rigid body and physics material to make each water particle behaving like a blob of water, while hoping I could learn ray marching in time to complete the simulation.
+
+Fig. 5 A physics material
+
+Physics materials allow control over an object's friction and bounciness against a surface, and not being able include this meant it would be difficult to make the system behave like water. So, I decided to make the fluid system from scratch by creating/duplicating multiple spheres in the scene, giving them a rigid body and physics material to make each water particle behaving like a blob of water, while hoping I could learn ray marching in time to complete the simulation.
 
 ## Other Objects and Concepts
 > List/explain any extra things you have added to your scene that aren't addressed in other parts of your report that you want to highlight.
 
-- Campfire model for realism
-- Invisible ramp to transfer water particles (making it transparent didn't make sense, might as well not have it visible)
+- Campfire model as prop for the fire
+- Invisible ramp to transfer water particles (having it visible was unnecessary since it blocks the view of the water particles)
 - Flickering light - realism
 
 ======================================================
 # Insights/Questions/Comments
 ##### Q: Did you attempt any new dynamic systems not covered in the unit so far (i.e. anything other than rigid bodies and particles)? What motivated you to try/use it (or not try them)?
-A: Fluid system
+A: Fluid system. It was the next step in my list of dynamic systems to learn.
 
 ##### Q: Did you run into any issues with any processes you did in this task? List/explain what you tried/how/if/ you solved it or not.
 A:
