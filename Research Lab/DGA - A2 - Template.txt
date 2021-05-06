@@ -1,0 +1,80 @@
+
+Dynamics for Games and Animation
+======================================================
+# Assignment 2 - Project Research and Plan
+Student Name: Khang Trinh
+Student ID: 102118468
+
+======================================================
+> See task sheet (Section 3) for details on each section
+
+## 1 - Overview and Pitch
+
+
+## 2 - Research, Develop/Test
+
+Nuke
+[Gab prod](https://youtu.be/28MQrE7fUk4)
+[Asset Store](https://youtu.be/Urgakf0GEHk)
+[Stylised example](https://vimeo.com/245010541)
+[Breakdown of stylised example](https://vimeo.com/246595474)
+
+[Slowmo simulation(?)](http://pa1.narvii.com/6322/522794b1fd062b2b485b5db10814d784daaf151d_00.gif)
+[Realife example](https://i.gifer.com/75zI.gif)
+[Biggest nuke in history](https://www.dailymotion.com/video/x6igm0)
+[Realife examples](https://youtu.be/mP3bcPvgIG8)
+[Mushroom cloud slowmo + closeup](https://thumbs.gfycat.com/BackSecondhandGourami-mobile.mp4)
+[Miniature mushroom cloud](https://thumbs.gfycat.com/ClumsyColdBat-size_restricted.gif)
+[More miniature mushroom clouds](https://media1.tenor.com/images/11403204db8737e5a5fa12b91553dd46/tenor.gif?itemid=7915724)
+[Shockwave from nuke](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+
+[Example in a game](https://wiki.factorio.com/images/Atomic_bomb_explosion.gif)
+[More ingame examples](https://youtu.be/2WbJxLur5Uk)
+
+[Physics Explanation](https://en.wikipedia.org/wiki/Mushroom_cloud)
+[Anatomy breakdown](https://en.wikipedia.org/wiki/Castle_Bravo)
+[Anatomy breakdown take #2](https://www.lanl.gov/discover/publications/national-security-science/2019-fall/mushroom-cloud-anatomy.php)
+
+Vortex
+[Gab prod](https://youtu.be/Qyh9RPxeKcA)
+[Fire vortex in slowmo](https://youtu.be/QwoghxwETng)
+[Unity example](https://youtu.be/JzezSQdKJoA?t=199)
+[More unity example](https://youtu.be/fOE_tfYZYAk)
+## 3 - The Science Behind the Design
+
+
+## 4 - Production Plan
+
+
+## 5 - Timeline
+
+
+## 6 - Reflection
+
+
+======================================================
+# Resources
+> List (with names/titles) any websites/links that you found useful/helpful - don’t include things like search engines
+
+======================================================
+# Additional Questions
+##### Q: Which of the 4+ criteria are you aiming to fulfil (see section 3.1.1 for details)?
+A:
+
+##### Q: How confident are you about your ability to reach your proposed portfolio’s timeline? Why?
+A:
+
+##### Q:How confident are you with the technical aspect of making your portfolio? Why?
+A:
+
+##### Q: Will you attempt any new dynamic systems not covered in the unit so far? What motivated you to look into them (or not)?
+A:
+
+##### Q: Which topics are you most interested in within your proposed portfolio? Why?
+A:
+
+##### Q: Are there any things you wanted to try but decided not to do? Why?
+A:
+
+##### Q: Any other comments/feedback/ideas?
+A:
