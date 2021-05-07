@@ -1,4 +1,5 @@
 
+
 Dynamics for Games and Animation
 ======================================================
 # Assignment 2 - Project Research and Plan
@@ -9,45 +10,41 @@ Student ID: 102118468
 > See task sheet (Section 3) for details on each section
 
 ## 1 - Overview and Pitch
+TLDR: Atomic bomb and interaction with other objects in the scene (trees, cars, buildings, etc.)
+Atomic Bomb:
 
 
 ## 2 - Research, Develop/Test
 
-Nuke
-[Gab prod](https://youtu.be/28MQrE7fUk4)
-[Asset Store](https://youtu.be/Urgakf0GEHk)
-[Stylised example](https://vimeo.com/245010541)
-[Breakdown of stylised example](https://vimeo.com/246595474)
 
-[Slowmo simulation(?)](http://pa1.narvii.com/6322/522794b1fd062b2b485b5db10814d784daaf151d_00.gif)
-[Realife example](https://i.gifer.com/75zI.gif)
-[Biggest nuke in history](https://www.dailymotion.com/video/x6igm0)
-[Realife examples](https://youtu.be/mP3bcPvgIG8)
-[Mushroom cloud slowmo + closeup](https://thumbs.gfycat.com/BackSecondhandGourami-mobile.mp4)
-[Miniature mushroom cloud](https://thumbs.gfycat.com/ClumsyColdBat-size_restricted.gif)
-[More miniature mushroom clouds](https://media1.tenor.com/images/11403204db8737e5a5fa12b91553dd46/tenor.gif?itemid=7915724)
-[Shockwave from nuke](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
-
-[Example in a game](https://wiki.factorio.com/images/Atomic_bomb_explosion.gif)
-[More ingame examples](https://youtu.be/2WbJxLur5Uk)
-
-[Physics Explanation](https://en.wikipedia.org/wiki/Mushroom_cloud)
-[Anatomy breakdown](https://en.wikipedia.org/wiki/Castle_Bravo)
-[Anatomy breakdown take #2](https://www.lanl.gov/discover/publications/national-security-science/2019-fall/mushroom-cloud-anatomy.php)
-
-Vortex
-[Gab prod](https://youtu.be/Qyh9RPxeKcA)
-[Fire vortex in slowmo](https://youtu.be/QwoghxwETng)
-[Unity example](https://youtu.be/JzezSQdKJoA?t=199)
-[More unity example](https://youtu.be/fOE_tfYZYAk)
 ## 3 - The Science Behind the Design
+**Phase 1:** Initial explosion (happens in milliseconds)
+- Flash + Rapidly expanding ball of plasma (roughly 2km in diameter)
+	- Everything touched by it is evaporated (the ball is hotter than the sun in this stage)
+- Everything flammable within 13km is burnt from the thermal pulse produced by the heat (plastic, wood, fabric, hair, skin, etc.)
 
+**Phase 2:** The shockwave (happens in a few seconds)
+- Heat and radiation from the fireball create a bubble of superheated and super-compressed air that expands faster the the speed of sound, resulting in a shockwave
+	- Dust clouds starts to appear here
+	- Shockwave travels faster than the dust clouds
+	- Buildings and structures within 1km are grounded
+	- Buildings within 175km collapse
+	- Gas stations explodes, spreading fire
 
+**Phase 3:** The mushroom (happens in a few minutes)
+- Made from the remains of the fireball, dust and ash (glowing hot)
+	- Condensation rings start to appear here from layers of humidity in the air (grows from center of the mushroom cloud outwards). Can only happen in warm, wet environments
+	- Can pull smokes and fires from nearby rubbles towards the center
+- Shockwave still travels during this time
+- Can last up to 10min
 ## 4 - Production Plan
 
 
 ## 5 - Timeline
-
+Week 10
+Week 11
+Week 12
+Week 13
 
 ## 6 - Reflection
 
@@ -55,6 +52,44 @@ Vortex
 ======================================================
 # Resources
 > List (with names/titles) any websites/links that you found useful/helpful - don’t include things like search engines
+> 
+**Nuke**
+*Examples that assist in production*
+[Gabriel Aguiar Prod - Nuke Explosion in Shader Graph](https://youtu.be/28MQrE7fUk4)
+[wlang - Unity example](https://vimeo.com/245010541)
+[wlang - Breakdown of unity example](https://vimeo.com/246595474)
+[Alex Merqury - More Unity example](https://youtu.be/Urgakf0GEHk)
+
+*References*
+[Slowmo simulation(?)](http://pa1.narvii.com/6322/522794b1fd062b2b485b5db10814d784daaf151d_00.gif)
+[Realife example](https://i.gifer.com/75zI.gif)
+[Biggest nuke in history](https://www.dailymotion.com/video/x6igm0)
+[Realife examples](https://youtu.be/mP3bcPvgIG8)
+[Example in a game](https://wiki.factorio.com/images/Atomic_bomb_explosion.gif)
+[More ingame examples](https://youtu.be/2WbJxLur5Uk)
+
+*Anatomy analysis*
+1/ Overall
+[Breakdown of phases](https://youtu.be/5iPH-br_eJQ)
+[Anatomy breakdown](https://en.wikipedia.org/wiki/Castle_Bravo)
+
+2/ Shockwave
+[Shockwave from nuke](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+[Shockwave in slowmo](https://www.military.com/video/ammunition-and-explosives/explosives/shockwave-captured-on-high-speed/763995636001)
+
+3/ Mushroom cloud
+[Miniature mushroom cloud](https://thumbs.gfycat.com/ClumsyColdBat-size_restricted.gif)
+[More miniature mushroom clouds](https://media1.tenor.com/images/11403204db8737e5a5fa12b91553dd46/tenor.gif?itemid=7915724)
+[Mushroom cloud slowmo + closeup](https://thumbs.gfycat.com/BackSecondhandGourami-mobile.mp4)
+[Anatomy breakdown](https://www.lanl.gov/discover/publications/national-security-science/2019-fall/mushroom-cloud-anatomy.php)
+[Physics Explanation](https://en.wikipedia.org/wiki/Mushroom_cloud)
+
+
+Vortex
+[Gab prod](https://youtu.be/Qyh9RPxeKcA)
+[Fire vortex in slowmo](https://youtu.be/QwoghxwETng)
+[Unity example](https://youtu.be/JzezSQdKJoA?t=199)
+[More unity example](https://youtu.be/fOE_tfYZYAk)
 
 ======================================================
 # Additional Questions
