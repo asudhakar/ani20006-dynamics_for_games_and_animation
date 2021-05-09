@@ -48,13 +48,16 @@ Outcome: Changed goal to recreating one big/complex fx, either an atomic bomb or
 
 [Fire Tornado](http://naturetech.co.il/wp-content/uploads/2015/12/firenado.gif) vs [Nuclear Bomb](https://www.dailymotion.com/video/x6igm0)
 
-**05/05/2021:** Decided to expand my knowledge with the rigidbody system. More specifically handling forces to the rigidbodies rather than just dealing with collision. This would most likely be seen in objects flying + glass shattering when shockwave hits
+**05/05/2021:** Decided to expand my knowledge with the rigidbody system. More specifically adding forces to the rigidbodies and dealing with explosion fx, rather than just dealing with collision. This would be best demonstrated in showing objects flying/breaking when the shockwave coming from the nuke hits.
 
-Outcome: Making nuke fx from perspective of the receiver rather from the attacker
-https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4
+Outcome: Making nuke fx from perspective of the receiver rather from the attacker. [Something similar to this.](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Mushroom_cloud.svg/1024px-Mushroom_cloud.svg.png)
 
 ## 3 - The Science Behind the Design
-**Phase 1:** Initial explosion (happens in milliseconds)
+ [Kurzgesagt - Breakdown of phases in a nuclear bomb explosion](https://youtu.be/5iPH-br_eJQ)
+ [Los Alamos - Anatomy breakdown of nuke mushroom cloud](https://www.lanl.gov/discover/publications/national-security-science/2019-fall/mushroom-cloud-anatomy.php)
+**Phase 1:** The explosion (happens in milliseconds)
 - Flash + Rapidly expanding ball of plasma (roughly 2km in diameter)
 	- Everything touched by it is evaporated (the ball is hotter than the sun in this stage)
 - Everything flammable within 13km is burnt from the thermal pulse produced by the heat (plastic, wood, fabric, hair, skin, etc.)
@@ -62,7 +65,7 @@ https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4
 **Phase 2:** The shockwave (happens in a few seconds)
 - Heat and radiation from the fireball create a bubble of superheated and super-compressed air that expands faster the the speed of sound, resulting in a shockwave
 	- Dust clouds starts to appear here
-	- Shockwave travels faster than the dust clouds
+	- Shockwave travels much faster than the dust clouds
 	- Buildings and structures within 1km are grounded
 	- Buildings within 175km collapse
 	- Gas stations explodes, spreading fire
@@ -70,9 +73,10 @@ https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4
 **Phase 3:** The mushroom (happens in a few minutes)
 - Made from the remains of the fireball, dust and ash (glowing hot)
 	- Condensation rings start to appear here from layers of humidity in the air (grows from center of the mushroom cloud outwards). Can only happen in warm, wet environments
-	- Can pull smokes and fires from nearby rubbles towards the center
+	- Can pull smokes and fires from nearby rubbles towards the center after the 2nd phase
 - Shockwave still travels during this time
-- Can last up to 10min
+- Cloud can last up to 10min
+
 ## 4 - Production Plan
 Smokes plumes for mushroom cloud can either be made using smoke particle system + windzone (experimental) or mesh with shader with a height map
 
@@ -95,30 +99,31 @@ Smokes plumes for mushroom cloud can either be made using smoke particle system 
 > List (with names/titles) any websites/links that you found useful/helpful - don’t include things like search engines
 > 
 **Nuke**
-*Examples that assist in production*
+1/ Examples that assist in production
 [Gabriel Aguiar Prod - Nuke Explosion in Shader Graph](https://youtu.be/28MQrE7fUk4)
 [wlang - Unity example](https://vimeo.com/245010541)
 [wlang - Breakdown of unity example](https://vimeo.com/246595474)
 [Alex Merqury - More Unity example](https://youtu.be/Urgakf0GEHk)
 
-*References*
-[Slowmo simulation(?)](http://pa1.narvii.com/6322/522794b1fd062b2b485b5db10814d784daaf151d_00.gif)
-[Realife example](https://i.gifer.com/75zI.gif)
+2/ References
+*Realife*
 [Tsar Bomba](https://www.dailymotion.com/video/x6igm0)
-[Realife examples](https://youtu.be/mP3bcPvgIG8)
+[Realife example](https://i.gifer.com/75zI.gif)
+[More Realife examples](https://youtu.be/mP3bcPvgIG8)
+[Eye-level perspective of a nuke exploding](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+*In-game*
 [Example in Factorio](https://wiki.factorio.com/images/Atomic_bomb_explosion.gif)
 [More ingame examples](https://youtu.be/2WbJxLur5Uk)
+[Slowmo simulation(?)](http://pa1.narvii.com/6322/522794b1fd062b2b485b5db10814d784daaf151d_00.gif)
 
-*Anatomy analysis*
-1/ Overall
-[Breakdown of phases](https://youtu.be/5iPH-br_eJQ)
-[Anatomy breakdown](https://en.wikipedia.org/wiki/Castle_Bravo)
+3/ Anatomy analysis
+*Overall*
+ [Kurzgesagt - Breakdown of phases in a nuclear bomb explosion](https://youtu.be/5iPH-br_eJQ)
 
-2/ Shockwave
-[Shockwave from nuke](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+*Shockwave*
 [Shockwave in slowmo](https://www.military.com/video/ammunition-and-explosives/explosives/shockwave-captured-on-high-speed/763995636001)
 
-3/ Mushroom cloud
+*Mushroom cloud*
 [Miniature mushroom cloud](https://thumbs.gfycat.com/ClumsyColdBat-size_restricted.gif)
 [More miniature mushroom clouds](https://media1.tenor.com/images/11403204db8737e5a5fa12b91553dd46/tenor.gif?itemid=7915724)
 [Mushroom cloud slowmo + closeup](https://thumbs.gfycat.com/BackSecondhandGourami-mobile.mp4)
