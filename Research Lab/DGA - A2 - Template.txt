@@ -51,9 +51,10 @@ Outcome: Changed goal to recreating one big/complex fx, either an atomic bomb or
 **05/05/2021:** Decided to expand my knowledge with the rigidbody system. More specifically adding forces to the rigidbodies and dealing with explosion fx, rather than just dealing with collision. This would be best demonstrated in showing objects flying/breaking when the shockwave coming from the nuke hits.
 
 Outcome: Making nuke fx from perspective of the receiver rather from the attacker. [Something similar to this.](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
-
+*Note:* This will result in the explosion being seen from further away than if it was observed from a military plane dropping it. So less detail is required to show for the nuke, and more for the object being affected by the explosion.
 ## 3 - The Science Behind the Design
 **1. FX Breakdown**
+
 Links used
  [Kurzgesagt - Breakdown of phases in a nuclear bomb explosion](https://youtu.be/5iPH-br_eJQ)
  [Los Alamos - Anatomy breakdown of nuke mushroom cloud](https://www.lanl.gov/discover/publications/national-security-science/2019-fall/mushroom-cloud-anatomy.php)
@@ -66,6 +67,7 @@ Links used
 **Phase 2:** The shockwave (happens in a few seconds)
 ![Slow Motion Shots Of A Large Explosion With A Visible Shock Wave High-Res  Stock Video Footage - Getty Images](https://media.gettyimages.com/videos/slow-motion-shots-of-a-large-explosion-with-a-visible-shock-wave-video-id511075590?s=640x640)
 - Heat and radiation from the fireball create a bubble of superheated and super-compressed air that expands faster the the speed of sound, resulting in a shockwave
+	- Moisture condensation distorts the camera
 	- Dust clouds starts to appear here
 	- Shockwave travels much faster than the dust clouds
 	- Buildings and structures within 1km are grounded
@@ -77,10 +79,13 @@ Links used
 - Made from the remains of the fireball, dust and ash (glowing hot)
 	- Condensation rings start to appear here from layers of humidity in the air (grows from center of the mushroom cloud outwards). The more warm + wet the environment, the more rings will appear
 	- Can pull smokes and fires from nearby rubbles towards the center after the 2nd phase
+	- Over time, the center of the cap would still be glowing, but the outside would cool down to a combination of light grey and dark grey
 - Shockwave still travels during this time
 - Cloud can last up to 10min
 
-****2. Conclusions:****
+======================================================
+**2. Conclusions:**
+
 Links used
 [Tsar Bomba](https://www.dailymotion.com/video/x6igm0)
 [About the Tsar Bomba](https://www.britannica.com/topic/Tsar-Bomba)
@@ -92,17 +97,27 @@ The explosion will look very similar to this: [Eye-level perspective of a nuke e
 
 **Place of occurence:** 
 A place that has no people and little to no environmental props (easy scene construction), but can still have a house - a desert. The Tsar Bomba exploded in a desert in the Artic, and produced 2 condensation rings. So the amount of rings produced by this nuke should be the same +/-1 (compensation for inaccruacies in simulation). 
-![Courage The Cowardly Dog House In 3D (Day) - YouTube](https://i.ytimg.com/vi/ER-h3XpnQok/maxresdefault.jpg)
+![](https://cdn.discordapp.com/attachments/713735780412948554/840895516794683392/unknown.png)
 
 What the house + environment of the observer would look like
 
-![Tsar Bomba was the most powerful atomic bomb ever created](https://www.thevintagenews.com/wp-content/uploads/2018/07/crater_-_flickr_-_the_official_ctbto_photostream-1280x720.jpg)
+![](https://cdn.discordapp.com/attachments/713735780412948554/840895649364574208/unknown.png)
 
 Crater left by the Tsar Bomba
 
 ![Tsar Bomba, Largest Thermonuclear Hydrogen Bomb Ever Tested GIF | Gfycat](https://thumbs.gfycat.com/DeepNegligibleCarpenterant-size_restricted.gif)
 
 Tsar Bomba exploding
+
+======================================================
+**3. Special considerations**
+Nuke
+- The explosion would just be a flash. Since the initial stage happens so quickly and from so far away, it's very hard to see clearly what the ball of plasma looks like.
+- The shockwave as of right now would just be an invisible force affecting objects around the scene (it's more important to simulate the fx of the shockwave better than making it look visually accurate). If there's still time during the post processing stage, the camera distortion fx will be added.
+- The mushroom cloud will consist of the expanding dust cloud, the rising stem, and the swirling mushroom cap. 2 condensation rings will be produced from the blast. The cloud will last the entire duration of the demonstration.
+
+- If the building's integrity is too weak, or the building's placed too close to the explosion that it would collapse in realife, there's no way to know for sure without going into too much unecessary details. So, for the purpose of demonstration, the building will not collapse or show any signs of *major* damage (ie. the most would be dust falling and window shattering, but the actual walls will not crack or break).
+- 
 
 ## 4 - Production Plan
 Smokes plumes for mushroom cloud can either be made using smoke particle system + windzone (experimental) or mesh with shader with a height map
