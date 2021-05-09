@@ -84,7 +84,7 @@ Links used
 - Cloud can last up to 10min
 
 ======================================================
-**2. Conclusions:**
+**2. Conclusions for production:**
 
 Links used
 [Tsar Bomba](https://www.dailymotion.com/video/x6igm0)
@@ -105,23 +105,34 @@ What the house + environment of the observer would look like
 
 Crater left by the Tsar Bomba
 
-![Tsar Bomba, Largest Thermonuclear Hydrogen Bomb Ever Tested GIF | Gfycat](https://thumbs.gfycat.com/DeepNegligibleCarpenterant-size_restricted.gif)
+![TSAR BOMB. Nuclear Explosion GIF | Gfycat](https://thumbs.gfycat.com/FinishedInsignificantBat-size_restricted.gif)
 
 Tsar Bomba exploding
 
-======================================================
-**3. Special considerations**
-Nuke
+**About the Nuke:**
 - The explosion would just be a flash. Since the initial stage happens so quickly and from so far away, it's very hard to see clearly what the ball of plasma looks like.
 - The shockwave as of right now would just be an invisible force affecting objects around the scene (it's more important to simulate the fx of the shockwave better than making it look visually accurate). If there's still time during the post processing stage, the camera distortion fx will be added.
 - The mushroom cloud will consist of the expanding dust cloud, the rising stem, and the swirling mushroom cap. 2 condensation rings will be produced from the blast. The cloud will last the entire duration of the demonstration.
+- For post processing, motion blur is a must for every explosion fx. Glare/Bloom fx from the mushroom cap glowing is also necessary to enhance visuals.
+- For lighting, it seems that it's acceptable to switch light color from "normal" to red/orange immediately as soon as the bomb explodes, referring to Tsar Bomba for reference.
 
+**About the house and its objects:**
 - If the building's integrity is too weak, or the building's placed too close to the explosion that it would collapse in realife, there's no way to know for sure without going into too much unecessary details. So, for the purpose of demonstration, the building will not collapse or show any signs of *major* damage (ie. the most would be dust falling and window shattering, but the actual walls will not crack or break).
-- 
+- For now, other than the house's windows, any other object that may be fragile will not break. If there is still time after post processing, this will be added in.
+- The house's glass will be plate glass instead of tempered glass (it's an old house). In other words, the glass will break into large shards instead of tiny ones. There are [too many factors](http://sunshadewindowfilms.com/causes-glass-break/) to determine how [close](https://youtu.be/tWLe8zu7HDQ) or [far](https://youtu.be/l4CA-4k21eA) they'll be flung away from the frame (ie. force of the shockwave, glass integrity, distance from blast zone, temperature, etc.). Because of this, the distance that they'll be flying will be a rough estimation.
 
 ## 4 - Production Plan
-Smokes plumes for mushroom cloud can either be made using smoke particle system + windzone (experimental) or mesh with shader with a height map
-
+The only dynamic object in the scene will be the nuke's shockwave, it's the only object that will be actively affecting other objects in the scene. 
+- First object to create is the first object that will be observed in the scene: mushroom cloud
+	- The proofs of concept heavily suggest the use of 3D mesh and height map to create the mushroom cloud. This might be for optimzation, or ease of implementation, or even just a style of choice, but this resulted in a stylised version of the fx. 
+	- For a photorealistic effect, the smoke plumes would need to be made using smoke particle system. This will also allow for better control on the colour over lifetime, making the fx of the cloud glowing red in the center but grey outside easier.
+	- For moving the smoke plumes swirling around in the cap, windzone/external force meshes will be used to replicate the behavior
+- Next is finding models to construct the scene. This includes the model for the interior of the house, some grass/bushes for outside props and indoor furniture (cups, lamps, etc.), while determining camera distance from the explosion
+- Next is making glass windows according to [this video](https://youtu.be/dA-MPeZ0HVM).
+- Next is programming the "knock away" effect from the explosion. Any object that is not the house will be applied with this script. As the shockwave hits any object in the scene, the object will get knocked away depending on the size of its hitbox (how big the object is). The smaller the size the further they'll get knocked away.
+- Next are the things that make up the shockwave: the dust clouds, and the camera distortion fx. 
+	- The dust cloud will consist of plumes and small debris (these will be small, flat planes like [here](https://youtu.be/2WbJxLur5Uk?t=213)).
+	- The camera distortion fx will be created following this tutorial[enter link description here](https://youtu.be/CXCyVDEplyM)
 
 ## 5 - Timeline
 |Week|Goals  |
