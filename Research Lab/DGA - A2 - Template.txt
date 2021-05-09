@@ -16,9 +16,9 @@ Atomic Bomb:
 
 
 ## 2 - Research, Develop/Test
-**22/03/2021:** Considered making an fx pack consisted of many small and simple fx's for a moveset (ie. avatar fire bending)
-Possible moves to recreate from first glance: [28 Firebending moves in Avatar](https://youtu.be/V0IdKWKt5dM)
-
+**22/04/2021:** Considered making an fx pack consisted of many small and simple fx's for a moveset, maybe for a fighting game. This purely came from a need for flexible project management. If the project output needs to be cut down for whatever reason (overscoping, unexpected challenges, etc.), then it's as easy as reducing the number of fx's required to create.
+Outcome: [28 Firebending moves in Avatar](https://youtu.be/V0IdKWKt5dM)
+Possible moves to recreate from first glance:
 - Fire block 
 - Fire stream
 - Fire whip
@@ -28,29 +28,42 @@ Possible moves to recreate from first glance: [28 Firebending moves in Avatar](h
 - Fire missles
 - Intertwined fire stream
 
-**26/03/2021:** Realized going deep is better than going wide for this project. Going wide provides opportunity to learn many new skills and concepts quicker, but going deep allows better control over quality of the final product. In other words, going deep forces a more thorough analysis of the one fx being recreated, allowing for a much deeper understanding of the underlying mechanics of the fx than going wide can provide. Doing this will result in a more complex fx for the final product than going wide can under the same time constraints. This unit focusses on recreating physically accurate fx's by evalutating a range of physics theories and simulation practices related to it. So, creating an fx with many layers of complexity seems to be the more desirable method since it will help train my awareness to the tiny nuances in the interaction of the different components of the fx, and from that, hopefully be able to simulate said interactions in my final product.
+**26/04/2021:** Realized going deep (ie. creating 1 complex fx) is better than going wide (ie. creating many simple fx's) for this project. Going wide provides opportunity to learn many new skills and concepts quicker, but going deep gives better quality for the final product in the context of this unit. 
 
-Outcome: Changed goal to recreating an atomic bomb and a fire tornado
+![enter image description here](https://i.pinimg.com/originals/5c/7a/66/5c7a66053b785f4549d7df72cae2a678.gif)
+
+![](https://cdn.discordapp.com/attachments/713735780412948554/840798596144037898/unknown.png)
+
+*How?*
+Creating one fx with many layers of details requires a deep understanding of its underlying mechanics and the physical interactions between the components involved, which forces a thorough analysis of each component when studying the fx. 
+
+*In the context of this unit?*
+This unit focusses on recreating physically accurate fx's by evalutating a range of physics theories and simulation practices related to use as reference. So, by learning to create one complex fx rather than creating many simple fx's, it will help train my ability to break down an fx to its core, and the tiny details in the way each of the components interact with each other (which better corresponds to the goals of the unit), rather than training my skills in rapid development and ability to absorb a large amount of information. From there, I can hopefully show what I studied from that fx by simulating as much of it as possible (if not everything then at least the most important ones), rather than showing my ability to "roughly" recreate many small fx's in the same amount of time.
+
+Doing this would still fulfill the need for flexible management, since layers of complexity can be dropped if the situation calls for it.
+
+Outcome: Changed goal to recreating one big/complex fx, either an atomic bomb or a fire tornado.
+
+**31/04/2021:** 
 
 , but  atomic bomb fx and fire tornado fx, but I like going deep (creating one fx with many layers of details) more than going wide (creating many simple fx). 
 
-![enter image description here](https://media.discordapp.net/attachments/713735780412948554/840759598720745472/unknown.png)
 
-![enter image description here](https://images2.minutemediacdn.com/image/upload/c_crop,h_1345,w_2000,x_0,y_0/v1555949079/shape/mentalfloss/581049-mesut_zengin-istock-1138195821.jpg?itok=DoSFti67)
+
+
 
 ![enter image description here](https://i.pinimg.com/originals/77/38/65/773865aee0f79a165dd26cab19effb9e.gif)
 ![Image](https://pbs.twimg.com/media/EArSQB2U0AcqFSY?format=jpg&name=large)
 https://twitter.com/ryotom761_cc2/status/1155967423113125889
 
-Going deep allows for more control over the quality of the final product (ie. if it's close to the deadline and I'm only ), while going wide makes learning many new concepts faster, but will also takes more time to complete
-![enter image description here](https://i.pinimg.com/originals/5c/7a/66/5c7a66053b785f4549d7df72cae2a678.gif)
+
 and creating the nuke fx has a lot more layers for details (ie. shockwave, debris, even the mushroom cloud alone has many smaller components) than a fire tornado does (it's just a tornado on fire, not a lot can be added to give more depth)
 
 - This time I wanna expand my knowledge with the rigidbody system. More specifically adding forces to the rigidbodies rather than just dealing with collision.
 	- This would most likely be seen in objects flying + glass shattering when shockwave hits
 Smokes plumes for mushroom cloud can either be made using smoke particle system + windzone (experimental) or mesh with shader with a height map
 
-
+Outcome: Making nuke fx from perspective of the receiver rather from the attacker
 
 ## 3 - The Science Behind the Design
 **Phase 1:** Initial explosion (happens in milliseconds)
