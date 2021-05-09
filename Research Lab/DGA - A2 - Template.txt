@@ -52,17 +52,19 @@ Outcome: Changed goal to recreating one big/complex fx, either an atomic bomb or
 
 Outcome: Making nuke fx from perspective of the receiver rather from the attacker. [Something similar to this.](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Mushroom_cloud.svg/1024px-Mushroom_cloud.svg.png)
-
 ## 3 - The Science Behind the Design
+**1. FX Breakdown**
+Links used
  [Kurzgesagt - Breakdown of phases in a nuclear bomb explosion](https://youtu.be/5iPH-br_eJQ)
  [Los Alamos - Anatomy breakdown of nuke mushroom cloud](https://www.lanl.gov/discover/publications/national-security-science/2019-fall/mushroom-cloud-anatomy.php)
 **Phase 1:** The explosion (happens in milliseconds)
+![](https://cdn.discordapp.com/attachments/713735780412948554/840894042777714748/unknown.png)
 - Flash + Rapidly expanding ball of plasma (roughly 2km in diameter)
 	- Everything touched by it is evaporated (the ball is hotter than the sun in this stage)
 - Everything flammable within 13km is burnt from the thermal pulse produced by the heat (plastic, wood, fabric, hair, skin, etc.)
 
 **Phase 2:** The shockwave (happens in a few seconds)
+![Slow Motion Shots Of A Large Explosion With A Visible Shock Wave High-Res  Stock Video Footage - Getty Images](https://media.gettyimages.com/videos/slow-motion-shots-of-a-large-explosion-with-a-visible-shock-wave-video-id511075590?s=640x640)
 - Heat and radiation from the fireball create a bubble of superheated and super-compressed air that expands faster the the speed of sound, resulting in a shockwave
 	- Dust clouds starts to appear here
 	- Shockwave travels much faster than the dust clouds
@@ -71,11 +73,36 @@ Outcome: Making nuke fx from perspective of the receiver rather from the attacke
 	- Gas stations explodes, spreading fire
 
 **Phase 3:** The mushroom (happens in a few minutes)
+![](https://cdn.discordapp.com/attachments/713735780412948554/840893209767837706/unknown.png)
 - Made from the remains of the fireball, dust and ash (glowing hot)
-	- Condensation rings start to appear here from layers of humidity in the air (grows from center of the mushroom cloud outwards). Can only happen in warm, wet environments
+	- Condensation rings start to appear here from layers of humidity in the air (grows from center of the mushroom cloud outwards). The more warm + wet the environment, the more rings will appear
 	- Can pull smokes and fires from nearby rubbles towards the center after the 2nd phase
 - Shockwave still travels during this time
 - Cloud can last up to 10min
+
+****2. Conclusions:****
+Links used
+[Tsar Bomba](https://www.dailymotion.com/video/x6igm0)
+[About the Tsar Bomba](https://www.britannica.com/topic/Tsar-Bomba)
+[Eye-level perspective of a nuke exploding](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+
+**Distance from camera to nuke:** 
+A building needs to be far enough (seems to be >175km) from the blast zone, so that the effect from a nuclear explosion can still be felt without being completely pulverized. This is necessary since the observer inside would need to survive the blast with little damage, so little camera work and animation is required (the central focus is the fx and the way the objects in the buildings behave to the blast, less so how the observer reacts to it).
+The explosion will look very similar to this: [Eye-level perspective of a nuke exploding.](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+
+**Place of occurence:** 
+A place that has no people and little to no environmental props (easy scene construction), but can still have a house - a desert. The Tsar Bomba exploded in a desert in the Artic, and produced 2 condensation rings. So the amount of rings produced by this nuke should be the same +/-1 (compensation for inaccruacies in simulation). 
+![Courage The Cowardly Dog House In 3D (Day) - YouTube](https://i.ytimg.com/vi/ER-h3XpnQok/maxresdefault.jpg)
+
+What the house + environment of the observer would look like
+
+![Tsar Bomba was the most powerful atomic bomb ever created](https://www.thevintagenews.com/wp-content/uploads/2018/07/crater_-_flickr_-_the_official_ctbto_photostream-1280x720.jpg)
+
+Crater left by the Tsar Bomba
+
+![Tsar Bomba, Largest Thermonuclear Hydrogen Bomb Ever Tested GIF | Gfycat](https://thumbs.gfycat.com/DeepNegligibleCarpenterant-size_restricted.gif)
+
+Tsar Bomba exploding
 
 ## 4 - Production Plan
 Smokes plumes for mushroom cloud can either be made using smoke particle system + windzone (experimental) or mesh with shader with a height map
@@ -108,6 +135,7 @@ Smokes plumes for mushroom cloud can either be made using smoke particle system 
 2/ References
 *Realife*
 [Tsar Bomba](https://www.dailymotion.com/video/x6igm0)
+[About the Tsar Bomba](https://www.britannica.com/topic/Tsar-Bomba)
 [Realife example](https://i.gifer.com/75zI.gif)
 [More Realife examples](https://youtu.be/mP3bcPvgIG8)
 [Eye-level perspective of a nuke exploding](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
