@@ -42,28 +42,16 @@ This unit focusses on recreating physically accurate fx's by evalutating a range
 
 Doing this would still fulfill the need for flexible management, since layers of complexity can be dropped if the situation calls for it.
 
-Outcome: Changed goal to recreating one big/complex fx, either an atomic bomb or a fire tornado.
+Outcome: Changed goal to recreating one big/complex fx, either an atomic bomb or a fire tornado. Specifics in terms of interactions and complexity are currently unknown.
 
-**31/04/2021:** 
+**30/04/2021:** Collected images and video references for both nuke and tornado. Decided that nuke is the prettier option.
 
-, but  atomic bomb fx and fire tornado fx, but I like going deep (creating one fx with many layers of details) more than going wide (creating many simple fx). 
+[Fire Tornado](http://naturetech.co.il/wp-content/uploads/2015/12/firenado.gif) vs [Nuclear Bomb](https://www.dailymotion.com/video/x6igm0)
 
-
-
-
-
-![enter image description here](https://i.pinimg.com/originals/77/38/65/773865aee0f79a165dd26cab19effb9e.gif)
-![Image](https://pbs.twimg.com/media/EArSQB2U0AcqFSY?format=jpg&name=large)
-https://twitter.com/ryotom761_cc2/status/1155967423113125889
-
-
-and creating the nuke fx has a lot more layers for details (ie. shockwave, debris, even the mushroom cloud alone has many smaller components) than a fire tornado does (it's just a tornado on fire, not a lot can be added to give more depth)
-
-- This time I wanna expand my knowledge with the rigidbody system. More specifically adding forces to the rigidbodies rather than just dealing with collision.
-	- This would most likely be seen in objects flying + glass shattering when shockwave hits
-Smokes plumes for mushroom cloud can either be made using smoke particle system + windzone (experimental) or mesh with shader with a height map
+**05/05/2021:** Decided to expand my knowledge with the rigidbody system. More specifically handling forces to the rigidbodies rather than just dealing with collision. This would most likely be seen in objects flying + glass shattering when shockwave hits
 
 Outcome: Making nuke fx from perspective of the receiver rather from the attacker
+https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4
 
 ## 3 - The Science Behind the Design
 **Phase 1:** Initial explosion (happens in milliseconds)
@@ -86,13 +74,18 @@ Outcome: Making nuke fx from perspective of the receiver rather from the attacke
 - Shockwave still travels during this time
 - Can last up to 10min
 ## 4 - Production Plan
+Smokes plumes for mushroom cloud can either be made using smoke particle system + windzone (experimental) or mesh with shader with a height map
 
 
 ## 5 - Timeline
-Week 10
-Week 11
-Week 12
-Week 13
+|Week|Goals  |
+|--|--|
+| Week 08 | Get ideas approved. |
+| Week 09 | <ul><li>Research physics</li><li>Find/develop proofs of concept</li><li>Submit report</li> |
+| Week 10 | Find models and construct scene |
+| Week 11 | Finish nuke fx + prop explosion |
+| Week 12 | Lighting + Post processing |
+| Week 13 | Finalise report and render file |
 
 ## 6 - Reflection
 
@@ -111,9 +104,9 @@ Week 13
 *References*
 [Slowmo simulation(?)](http://pa1.narvii.com/6322/522794b1fd062b2b485b5db10814d784daaf151d_00.gif)
 [Realife example](https://i.gifer.com/75zI.gif)
-[Biggest nuke in history](https://www.dailymotion.com/video/x6igm0)
+[Tsar Bomba](https://www.dailymotion.com/video/x6igm0)
 [Realife examples](https://youtu.be/mP3bcPvgIG8)
-[Example in a game](https://wiki.factorio.com/images/Atomic_bomb_explosion.gif)
+[Example in Factorio](https://wiki.factorio.com/images/Atomic_bomb_explosion.gif)
 [More ingame examples](https://youtu.be/2WbJxLur5Uk)
 
 *Anatomy analysis*
@@ -138,6 +131,7 @@ Vortex
 [Fire vortex in slowmo](https://youtu.be/QwoghxwETng)
 [Unity example](https://youtu.be/JzezSQdKJoA?t=199)
 [More unity example](https://youtu.be/fOE_tfYZYAk)
+[Twitter](https://twitter.com/ryotom761_cc2/status/1155967423113125889)
 
 ======================================================
 # Additional Questions
