@@ -1,0 +1,255 @@
+Dynamics for Games and Animation
+======================================================
+# Assignment 2 - Project Research and Plan
+Student Name: Khang Trinh
+Student ID: 102118468
+
+======================================================
+> See task sheet (Section 3) for details on each section
+
+## 1 - Overview and Pitch
+**TLDR:** Atomic bomb exploding in a desert, viewed from the perspective of a resident not far from the blast zone. The nuke starts with a bright flash, then releasing a strong shockwave and a tall mushroom cloud looming over the sky. As the shockwave from the nuke travels across the area, any object in its way are violently knocked away.
+
+Main goals:
+- Achieve a nuclear fx with all its basic components (ie. mushroom clouds, condensation rings, shockwave)
+- Demonstrate the impact of a nuclear explosion shockwave from a "safe" distance (far enough for a person to witness the event but not get critically injured from it)
+
+Stretch goals:
+- Make the event accurate to realife (ie. shockwave distortion fx on the camera, making sure the smoke plumes look realistic, breaking of prop objects)
+
+Moodboard/mood-video:
+ - [Where](https://cdn.discordapp.com/attachments/713735780412948554/840895516794683392/unknown.png)
+ -  [How](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+  - [Experience](https://youtu.be/l4CA-4k21eA)
+
+## 2 - Research, Develop/Test
+**22/04/2021:** Considered making an fx pack consisted of many small and simple fx's for a moveset, maybe for a fighting game. This purely came from a need for flexible project management. If the project output needs to be cut down for whatever reason (overscoping, unexpected challenges, etc.), then it's as easy as reducing the number of fx's required to create.
+
+Outcome: [28 Firebending moves in Avatar](https://youtu.be/V0IdKWKt5dM)
+
+Possible moves to recreate from first glance:
+- Fire block 
+- Fire stream
+- Fire whip
+- Fire jabs
+- Shield of Fire
+- Fire comet
+- Fire missles
+- Intertwined fire stream
+
+**26/04/2021:** Realized going deep (ie. creating 1 complex fx) is better than going wide (ie. creating many simple fx's) for this project. Going wide provides opportunity to learn many new skills and concepts quicker, but going deep gives better quality for the final product in the context of this unit. 
+
+![enter image description here](https://i.pinimg.com/originals/5c/7a/66/5c7a66053b785f4549d7df72cae2a678.gif)
+
+![](https://cdn.discordapp.com/attachments/713735780412948554/840798596144037898/unknown.png)
+
+*How?*
+Creating one fx with many layers of details requires a deep understanding of its underlying mechanics and the physical interactions between the components involved, which forces a thorough analysis of each component when studying the fx. 
+
+*In the context of this unit?*
+This unit focusses on recreating physically accurate fx's by evalutating a range of physics theories and simulation practices related to use as reference. So, by learning to create one complex fx rather than creating many simple fx's, it will help train my ability to break down an fx to its core, and the tiny details in the way each of the components interact with each other (which better corresponds to the goals of the unit), rather than training my skills in rapid development and ability to absorb a large amount of information. From there, I can hopefully show what I studied from that fx by simulating as much of it as possible (if not everything then at least the most important ones), rather than showing my ability to "roughly" recreate many small fx's in the same amount of time.
+
+Doing this would still fulfill the need for flexible management, since layers of complexity can be dropped if the situation calls for it.
+
+Outcome: Changed goal to recreating one big/complex fx, either an atomic bomb or a fire tornado. Specifics in terms of interactions and complexity are currently unknown.
+
+**30/04/2021:** Collected images and video references for both nuke and tornado. Decided that nuke is the prettier option.
+
+[Fire Tornado](http://naturetech.co.il/wp-content/uploads/2015/12/firenado.gif) vs [Nuclear Bomb](https://www.dailymotion.com/video/x6igm0)
+
+**05/05/2021:** Decided to expand my knowledge with the rigidbody system. More specifically adding forces to the rigidbodies and dealing with explosion fx, rather than just dealing with collision. This would be best demonstrated in showing objects flying/breaking when the shockwave coming from the nuke hits.
+
+Outcome: Making nuke fx from perspective of the receiver rather from the attacker. [Something similar to this.](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+*Note:* This will result in the explosion being seen from further away than if it was observed from a military plane dropping it. So less detail is required to show for the nuke, and more for the object being affected by the explosion.
+
+**09/05/2021:** Decided to reduced scope from shockwave affecting trees, cars and inside objects to just inside objects. Those are enough to demonstrate the effect of the shockwave on objects in the scene.
+
+## 3 - The Science Behind the Design
+**1. FX Breakdown**
+
+Links used
+- [Kurzgesagt - Breakdown of phases in a nuclear bomb explosion](https://youtu.be/5iPH-br_eJQ)
+- [Los Alamos - Anatomy breakdown of nuke mushroom cloud](https://www.lanl.gov/discover/publications/national-security-science/2019-fall/mushroom-cloud-anatomy.php)
+
+**Phase 1:** The explosion (happens in milliseconds)
+
+![](https://cdn.discordapp.com/attachments/713735780412948554/840894042777714748/unknown.png)
+- Flash + Rapidly expanding ball of plasma (roughly 2km in diameter)
+	- Everything touched by it is evaporated (the ball is hotter than the sun in this stage)
+- Everything flammable within 13km is burnt from the thermal pulse produced by the heat (plastic, wood, fabric, hair, skin, etc.)
+
+**Phase 2:** The shockwave (happens in a few seconds)
+![Slow Motion Shots Of A Large Explosion With A Visible Shock Wave High-Res  Stock Video Footage - Getty Images](https://media.gettyimages.com/videos/slow-motion-shots-of-a-large-explosion-with-a-visible-shock-wave-video-id511075590?s=640x640)
+- Heat and radiation from the fireball create a bubble of superheated and super-compressed air that expands faster the the speed of sound, resulting in a shockwave
+	- Moisture condensation distorts the camera
+	- Dust clouds starts to appear here
+	- Shockwave travels much faster than the dust clouds
+	- Buildings and structures within 1km are grounded
+	- Buildings within 175km collapse
+	- Gas stations explodes, spreading fire
+
+**Phase 3:** The mushroom (happens in a few minutes)
+
+![](https://cdn.discordapp.com/attachments/713735780412948554/840893209767837706/unknown.png)
+- Made from the remains of the fireball, dust and ash (glowing hot)
+	- Condensation rings start to appear here from layers of humidity in the air (grows from center of the mushroom cloud outwards). The more warm + wet the environment, the more rings will appear
+	- Can pull smokes and fires from nearby rubbles towards the center after the 2nd phase
+	- Over time, the center of the cap would still be glowing, but the outside would cool down to a combination of light grey and dark grey
+- Shockwave still travels during this time
+- Cloud can last up to 10min
+
+
+**2. Conclusions for production:**
+
+Links used
+- [Tsar Bomba](https://www.dailymotion.com/video/x6igm0)
+- [About the Tsar Bomba](https://www.britannica.com/topic/Tsar-Bomba)
+- [Eye-level perspective of a nuke exploding](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+
+**Distance from camera to nuke:** 
+A building needs to be far enough (seems to be >175km) from the blast zone, so that the effect from a nuclear explosion can still be felt without being completely pulverized. This is necessary since the observer inside would need to survive the blast with little damage, so little camera work and animation is required (the central focus is the fx and the way the objects in the buildings behave to the blast, less so how the observer reacts to it).
+The explosion will look very similar to this: [Eye-level perspective of a nuke exploding.](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+
+**Place of occurence:** 
+A place that has no people and little to no environmental props (easy scene construction), but can still have a house - a desert. The Tsar Bomba exploded in a desert in the Artic, and produced 2 condensation rings. So the amount of rings produced by this nuke should be the same +/-1 (compensation for inaccruacies in simulation). 
+![](https://cdn.discordapp.com/attachments/713735780412948554/840895516794683392/unknown.png)
+
+What the house + environment of the observer would look like
+
+![](https://cdn.discordapp.com/attachments/713735780412948554/840895649364574208/unknown.png)
+
+Crater left by the Tsar Bomba
+
+![TSAR BOMB. Nuclear Explosion GIF | Gfycat](https://thumbs.gfycat.com/FinishedInsignificantBat-size_restricted.gif)
+
+Tsar Bomba exploding
+
+**About the Nuke:**
+- The explosion would just be a flash. Since the initial stage happens so quickly and from so far away, it's very hard to see clearly what the ball of plasma looks like.
+- The shockwave as of right now would just be an invisible force affecting objects around the scene (it's more important to simulate the fx of the shockwave better than making it look visually accurate). If there's still time during the post processing stage, the camera distortion fx will be added.
+- The mushroom cloud will consist of the expanding dust cloud, the rising stem, and the swirling mushroom cap. 2 condensation rings will be produced from the blast. The cloud will last the entire duration of the demonstration. There will be no skirts since it seems to be something not commonly associated with nukes. Recreating this the wrong way will make the fx looks more strange, so might as well not have it. If there is still time after the post processing stage, its implementation will be considered.
+- For post processing, motion blur is a must for every explosion fx. Glare/Bloom fx from the mushroom cap glowing is also necessary to enhance visuals.
+- For lighting, it seems that it's acceptable to switch light color from "normal" to red/orange immediately as soon as the bomb explodes, referring to Tsar Bomba for reference.
+- There won't be a crater since the blast will be happening from very far away (also an excuse to not have to worry about that)
+
+**About the house and its objects:**
+- If the building's integrity is too weak, or the building's placed too close to the explosion that it would collapse in realife, there's no way to know for sure without going into too much unecessary details. So, for the purpose of demonstration, the building will not collapse or show any signs of *major* damage (ie. the most would be dust falling and window shattering, but the actual walls will not crack or break).
+- For now, other than the house's windows, any other object that may be fragile will not break. If there is still time after post processing, this will be added in.
+- The house's glass will be plate glass instead of tempered glass (it's an old house). In other words, the glass will break into large shards instead of tiny ones. There are [too many factors](http://sunshadewindowfilms.com/causes-glass-break/) to determine how [close](https://youtu.be/tWLe8zu7HDQ) or [far](https://youtu.be/l4CA-4k21eA) they'll be flung away from the frame (ie. force of the shockwave, glass integrity, distance from blast zone, temperature, etc.). Because of this, the distance that they'll be flying will be a rough estimation.
+
+## 4 - Production Plan
+The project will be done in Unity using the HDRP (High Definition Rendering Pipeline) package to support post processing.
+
+The only dynamic object in the scene will be the nuke's shockwave, it's the only object that will be actively affecting other objects in the scene. 
+- First object to create is the first object that will be observed in the scene: mushroom cloud
+	- The proofs of concept heavily suggest the use of 3D mesh and height map to create the mushroom cloud. This might be for optimzation, or ease of implementation, or even just a style of choice, but this resulted in a stylised version of the fx. 
+	- For a photorealistic effect, the smoke plumes would need to be made using smoke particle system. This will also allow for better control on the colour over lifetime, making the fx of the cloud glowing red in the center but grey outside easier.
+	- For moving the smoke plumes swirling around in the cap, windzone/external force meshes will be used to replicate the behavior.
+	- For the condensation rings, it'll be a particle system emitting cloud meshes from the center outwards (mesh will need to be made in blender).
+	- The plumes will need to be HDR materials so they can have emission for the orange glowing phase.
+- Next is finding models to construct the scene. This includes the model and materials for the desert ground, interior of the house, some grass/bushes for outside props and indoor furniture (cups, lamps, etc.), while determining camera distance from the explosion.
+- Next is making glass windows according to [this video](https://youtu.be/dA-MPeZ0HVM).
+- Next is programming the "knock away" effect from the explosion. Any object that is not the house will be applied with this script. The shockwave will be constructed as a moving object with a trigger applied to it. As the shockwave hits any object in the scene, that object will be applied a force depending on the size of its hitbox (how big the object is). The smaller the size, the larger the force will be applied (there is a variable for controlling an object's mass, but this is a quicker way to achieve the same fx without too much complex calculation on the system).
+- Next are the things that make up the shockwave: the dust clouds, and the camera distortion fx. 
+	- The dust cloud will consist of plumes and small debris (these will be small, flat planes like [here](https://youtu.be/2WbJxLur5Uk?t=213)).
+	- The camera distortion fx will be created following [this tutorial.](https://youtu.be/CXCyVDEplyM)
+- Then comes lighting. There are a few light sources to consider: 1 from the nuke's cap, 1 from daylight (the fx will happen during daytime), and 1 or many from indoor lighting for the house. 
+	- There will need to be 2 HDRI's for the skydome. One for before the nuke explodes (blue sky/white lighting) and one for after (orange sky/orange lighting). 
+	- The light for the cap will need a script to control the light's intensity as it goes through the phases (blindingly bright at the start, then slowly fades towards the end). The light will need to be programmed to flicker as long as the cap still has orange smoke plumes, and also travels with the cap as the cap moves upward.
+- Finally, post processing. This includes motion blur, glare, bloom and camera shake. These will be done using the post processing volume in the HDRP package. There will be 2 volumes, one global volume that will have glare and bloom, and one local volume where the camera is with the motion blur. This is because the blur should only occur during the first few seconds of the explosion, and having it local will allow toggling. As for the camera shake, it can be achieved via [this tutorial.](https://youtu.be/9A9yj8KnM8c)
+
+The project will be built into an executable and will be recorded using OBS and exported as an MP4 for submission.
+
+## 5 - Timeline
+|Week|Goals  |
+|--|--|
+| Week 07 | Start plan, resesarch for ideas and references. |
+| Week 08 | Decide on project scope, get ideas approved. |
+| Week 09 | <ul><li>Research on physics interactions</li><li>Perform the Task 4 Analysis on the chosen fx</li><li>Develop proofs of concept. If there's no time, then find some instead</li><li>Submit report</li></ul> |
+| Week 10 | <ul><li>Find models and materials to populate the scene<ul><li>Courage the Cowardly Dog's house</li><li>Cups, lamps, table and chairs</li></ul></li><li>Develop particle system for the mushroom cloud's components:<ul><li>Cap (reminder to consider wind zone/external force mesh)</li><li>Stem (wind zone to bring them up)</li><li>Base cloud (velocity added from particle system)</li></ul></li><li>Develop shader for smoke plumes (check meteor fx)</li><li>Create the condensation rings:<ul><li>Create cloud ring models</li><li>Particle system</li></ul></li> |
+| Week 11 | Construct scene + write script for shockwave |
+| Week 12 | <ul><li>Lighting<ul><li>HDRI's + research to write script to switch between them</li><li>Nuke's light + script to control movement and intensity</li><li>Indoor lighting</li></ul></li><li>Post processing<ul><li>Global volume: glare + bloom</li><li>Local volume: motion blur + script to toggle volume</li></ul></li></ul> |
+| Week 13 | Build and record file + Finalise report for submission |
+
+## 6 - Reflection
+Once an idea has been chosen and in the process of being fleshed out, it hasn't changed for me since. If anything it's only gotten more solid as time goes on since I'm having to visually think about how the fx would look like during development constantly. Thanks to the way the report's template is structured, I was able to discover holes in my development process that would've only been discovered when I got to it, which may or may have not taken more time than anticipated (ie. having 2 HDRI's means I need a script to switch between them, which I don't know how to, and I wouldn't have realized until then had I not done this).
+
+======================================================
+# Resources
+> List (with names/titles) any websites/links that you found useful/helpful - don’t include things like search engines
+> 
+**Nuke fx and things involved in the fx**
+1/ Examples that will assist in production
+- [Gabriel Aguiar Prod - Nuke Explosion in Shader Graph](https://youtu.be/28MQrE7fUk4)
+- [wlang - Unity example](https://vimeo.com/245010541)
+- [wlang - Breakdown of unity example](https://vimeo.com/246595474)
+- [Alex Merqury - More Unity example](https://youtu.be/Urgakf0GEHk)
+- [Brackeys - Camera shake](https://youtu.be/9A9yj8KnM8c)
+- [Gabriel Aguiar Prod - Camera distortion](https://youtu.be/CXCyVDEplyM)
+- [Peer Play - Break glass in Unity](https://youtu.be/dA-MPeZ0HVM)
+
+2/ References
+*Realife*
+- [video - Tsar Bomba](https://www.dailymotion.com/video/x6igm0)
+- [Britannica - About the Tsar Bomba](https://www.britannica.com/topic/Tsar-Bomba)
+- [gif - Realife example](https://i.gifer.com/75zI.gif)
+- [video - More Realife examples](https://youtu.be/mP3bcPvgIG8)
+- [video - Eye-level perspective of a nuke exploding](https://thumbs.gfycat.com/EarnestPerfectIberianlynx-mobile.mp4)
+
+*Realife (Glass breaking)*
+- [Things that can cause glass to break](http://sunshadewindowfilms.com/causes-glass-break/)
+- [Tempered glass(?) breaking from mass fireworks explosion](https://youtu.be/l4CA-4k21eA)
+- [Plate glass(?) breaking from meteor explosion](https://youtu.be/tWLe8zu7HDQ)
+
+*In-game*
+- [gif - Example in Factorio](https://wiki.factorio.com/images/Atomic_bomb_explosion.gif)
+- [video - More ingame examples](https://youtu.be/2WbJxLur5Uk)
+- [gif - Slowmo simulation(?)](http://pa1.narvii.com/6322/522794b1fd062b2b485b5db10814d784daaf151d_00.gif)
+
+3/ Anatomy analysis
+*Overall*
+-  [Kurzgesagt - Breakdown of phases in a nuclear bomb explosion](https://youtu.be/5iPH-br_eJQ)
+
+*Shockwave*
+- [Shockwave in slowmo](https://www.military.com/video/ammunition-and-explosives/explosives/shockwave-captured-on-high-speed/763995636001)
+
+*Mushroom cloud*
+- [gif - Miniature mushroom cloud](https://thumbs.gfycat.com/ClumsyColdBat-size_restricted.gif)
+- [gif - More miniature mushroom clouds](https://media1.tenor.com/images/11403204db8737e5a5fa12b91553dd46/tenor.gif?itemid=7915724)
+- [video - Mushroom cloud slowmo + closeup](https://thumbs.gfycat.com/BackSecondhandGourami-mobile.mp4)
+- [Los Alamos - Anatomy breakdown of nuke mushroom cloud](https://www.lanl.gov/discover/publications/national-security-science/2019-fall/mushroom-cloud-anatomy.php)
+- [Wikipedia - Physics Explanation of mushroom clouds](https://en.wikipedia.org/wiki/Mushroom_cloud)
+
+
+**Vortex FX**
+- [Gab prod](https://youtu.be/Qyh9RPxeKcA)
+- [Fire vortex in slowmo](https://youtu.be/QwoghxwETng)
+- [Unity example](https://youtu.be/JzezSQdKJoA?t=199)
+- [More unity example](https://youtu.be/fOE_tfYZYAk)
+- [Twitter](https://twitter.com/ryotom761_cc2/status/1155967423113125889)
+
+**Avatar moveset**
+- [28 Firebending moves in Avatar](https://youtu.be/V0IdKWKt5dM)
+
+======================================================
+# Additional Questions
+##### Q: Which of the 4+ criteria are you aiming to fulfil (see section 3.1.1 for details)?
+A: 1, 2, 4, 5, 6
+
+##### Q: How confident are you about your ability to reach your proposed portfolio’s timeline? Why?
+A: 80% This is mostly for following this report's structure.
+
+##### Q:How confident are you with the technical aspect of making your portfolio? Why?
+A: 75% This is my 3rd portfolio in 
+
+##### Q: Will you attempt any new dynamic systems not covered in the unit so far? What motivated you to look into them (or not)?
+A: No, I only have 4 weeks for this tight schedule, so I'm not comfortable in trying something new
+
+##### Q: Which topics are you most interested in within your proposed portfolio? Why?
+A: The shockwave impacting other objects. It's the interactive bit in the fx that I'm looking forward to experimenting with
+
+##### Q: Are there any things you wanted to try but decided not to do? Why?
+A: All the discarded ideas, they were discarded due to the requirements of this project, not my ability to achieve them. If there was no requirement I would've gone with the moveset
+
+##### Q: Any other comments/feedback/ideas?
+A:
