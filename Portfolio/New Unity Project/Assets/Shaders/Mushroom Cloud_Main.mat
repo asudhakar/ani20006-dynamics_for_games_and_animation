@@ -105,7 +105,7 @@ Material:
     - Vector1_e1e469f550a842b2b6a3c46c61fe1e87: 0
     - Vector1_f2d689b3dc864b2d9f69cfb16191d433: 0.34
     - Vector1_f2d689b3dc864b2d9f69cfb16191d433_1: 3.14
-    - _2ndAmount: -1.05
+    - _2ndAmount: -1
     - _2ndScale: 0.34
     - _2ndSpeed: 4.01
     - _AddPrecomputedVelocity: 0
