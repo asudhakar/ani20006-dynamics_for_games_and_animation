@@ -107,7 +107,7 @@ Material:
     - Vector1_f2d689b3dc864b2d9f69cfb16191d433_1: 3.14
     - _2ndAmount: -1.05
     - _2ndScale: 0.34
-    - _2ndSpeed: 7.4
+    - _2ndSpeed: 4.01
     - _AddPrecomputedVelocity: 0
     - _AlphaCutoffEnable: 1
     - _AlphaDstBlend: 0
@@ -118,7 +118,7 @@ Material:
     - _Amount_1: 0.05
     - _BlendMode: 0
     - _ClipRange: 5
-    - _ColorSpeed: 0.07
+    - _ColorSpeed: 0.1
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
@@ -129,9 +129,10 @@ Material:
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 0
+    - _EmissionIntensity: 6.39
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
-    - _IsWorld: 0
+    - _IsWorld: 1
     - _MainAmount: 2.24
     - _MainScale: 0.2
     - _MainSpeed: 1.04
