@@ -88,6 +88,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Boolean_d6bce32a2b0e40a2bc797d97e034e359: 0
+    - Vector1_02f38042a12d436eb74ab2accad182a4: 1
     - Vector1_1: 0.09
     - Vector1_12af3844d3794a629280f1cc1938c6cb: 0.03
     - Vector1_3712c0e577294322aa03041ce7e5bf95: 0.8
@@ -105,9 +106,9 @@ Material:
     - Vector1_e1e469f550a842b2b6a3c46c61fe1e87: 0
     - Vector1_f2d689b3dc864b2d9f69cfb16191d433: 0.34
     - Vector1_f2d689b3dc864b2d9f69cfb16191d433_1: 3.14
-    - _2ndAmount: -1
-    - _2ndScale: 0.34
-    - _2ndSpeed: 4.01
+    - _2ndAmount: -0.03
+    - _2ndScale: -0.2
+    - _2ndSpeed: 9
     - _AddPrecomputedVelocity: 0
     - _AlphaCutoffEnable: 1
     - _AlphaDstBlend: 0
@@ -118,13 +119,16 @@ Material:
     - _Amount_1: 0.05
     - _BlendMode: 0
     - _ClipRange: 5
-    - _ColorSpeed: 0.1
+    - _ColorScale: 1.62
+    - _ColorScale_1: 2.54
+    - _ColorScale_2: 2.28
+    - _ColorSpeed: 0.07
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
-    - _DetailAmount: 0.05
-    - _DetailScale: 3.14
-    - _DetailSpeed: 0.09
+    - _DetailAmount: 0.01
+    - _DetailScale: 0.01
+    - _DetailSpeed: 0.02
     - _DiffusionProfileHash: 2.9406826
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 1
@@ -133,9 +137,9 @@ Material:
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
     - _IsWorld: 1
-    - _MainAmount: 2.24
-    - _MainScale: 0.2
-    - _MainSpeed: 1.04
+    - _MainAmount: 0.05
+    - _MainScale: 0.1
+    - _MainSpeed: 5
     - _NoiseScale: 0.2
     - _OpaqueCullMode: 2
     - _RayTracing: 0
@@ -176,7 +180,7 @@ Material:
     - Vector2_dc9a175d3b2d4698b6ad5573bab11ae4: {r: 0, g: 0.5, b: 0, a: 0}
     - Vector3_0f66c3ba2a144f2e8f888b3f879ad620: {r: 0, g: 0, b: 0, a: 0}
     - Vector4_c64f368063d341f2b6bd9b876a508abd: {r: 0, g: 0, b: 0, a: 0}
-    - _ChannelFactor: {r: 0, g: 0, b: 0, a: 0}
+    - _ChannelFactor: {r: 1.76, g: 1.45, b: 0.13, a: 0}
     - _DiffusionProfileAsset: {r: 1.3455052e-21, g: -4.865341e-36, b: -1.8969309e-22, a: -2.0312283e+21}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
