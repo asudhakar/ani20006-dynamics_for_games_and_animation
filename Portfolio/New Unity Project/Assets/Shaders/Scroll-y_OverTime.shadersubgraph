@@ -7,9 +7,6 @@
             "m_Id": "22e717535f7f485eaf07d9ec3e1fb634"
         },
         {
-            "m_Id": "0e8dca3e822341b7a2f2d5f4c3ae2aa9"
-        },
-        {
             "m_Id": "d0c8d5b873dd47509be303c7485147ca"
         }
     ],
@@ -208,24 +205,6 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.BooleanShaderProperty",
-    "m_ObjectId": "0e8dca3e822341b7a2f2d5f4c3ae2aa9",
-    "m_Guid": {
-        "m_GuidSerialized": "970520f0-db29-4148-b604-a74946852ae7"
-    },
-    "m_Name": "Use World Coords",
-    "m_DefaultReferenceName": "Boolean_0e8dca3e822341b7a2f2d5f4c3ae2aa9",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": true
 }
 
 {
