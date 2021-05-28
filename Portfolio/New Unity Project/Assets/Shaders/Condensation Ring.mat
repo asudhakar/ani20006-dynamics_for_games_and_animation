@@ -88,23 +88,24 @@ Material:
     - _BlendMode: 0
     - _ClipRange: 0.12
     - _ColorScale: 2
-    - _ColorScale_1: 1
-    - _ColorScale_2: 1
-    - _ColorSpeed: 0.05
+    - _ColorScale_1: 3
+    - _ColorScale_2: 3
+    - _ColorSpeed: 0
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
     - _DetailAmount: 0
     - _DetailScale: 3.14
     - _DetailSpeed: 0
-    - _DiffusionProfileHash: 2.7317202
+    - _DiffusionProfileHash: 2.9406826
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 0
-    - _EmissionIntensity: 0.8
+    - _EmissionIntensity: 0
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
-    - _MainAmount: 0.5
+    - _IsBaseCloud: 0
+    - _MainAmount: 0.2
     - _MainScale: 0.1
     - _MainSpeed: 0
     - _OpaqueCullMode: 2
@@ -142,7 +143,7 @@ Material:
     m_Colors:
     - _ChannelFactor: {r: 0.1, g: 0.1, b: 0.1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _DiffusionProfileAsset: {r: -1.405437e+32, g: 2.0030989e-26, b: 0.00000006313206, a: -4.4045647e-18}
+    - _DiffusionProfileAsset: {r: 1.3455052e-21, g: -4.865341e-36, b: -1.8969309e-22, a: -2.0312283e+21}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Range: {r: 0, g: 0.5, b: 0, a: 0}
