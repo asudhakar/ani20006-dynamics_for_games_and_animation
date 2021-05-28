@@ -75,6 +75,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Boolean_91e741604be94ff2972e0cacea10f4e4: 1
     - Vector1_05f45c023de44c24b15f033fc47f7fdf: 0
     - _2ndAmount: 3.18
     - _2ndScale: 0.34
@@ -90,7 +91,7 @@ Material:
     - _ColorScale: 1
     - _ColorScale_1: 1
     - _ColorScale_2: 1
-    - _ColorSpeed: -0.07
+    - _ColorSpeed: -0.05
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
@@ -104,6 +105,7 @@ Material:
     - _EmissionIntensity: 0
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
+    - _IsBaseCloud: 0
     - _MainAmount: 3.8
     - _MainScale: 0.1
     - _MainSpeed: 2
@@ -140,7 +142,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _ChannelFactor: {r: 3, g: 3, b: 3, a: 0}
+    - _ChannelFactor: {r: 2, g: 2, b: 2, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _DiffusionProfileAsset: {r: -1.405437e+32, g: 2.0030989e-26, b: 0.00000006313206, a: -4.4045647e-18}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}

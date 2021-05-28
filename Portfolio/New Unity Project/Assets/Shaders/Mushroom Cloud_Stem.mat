@@ -121,7 +121,7 @@ Material:
     - _ColorScale: 2
     - _ColorScale_1: 1
     - _ColorScale_2: 1
-    - _ColorSpeed: -0.17
+    - _ColorSpeed: -0.05
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
@@ -135,6 +135,7 @@ Material:
     - _EmissionIntensity: 3
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
+    - _IsBaseCloud: 0
     - _IsWorld: 1
     - _MainAmount: -1.08
     - _MainScale: 0.1
