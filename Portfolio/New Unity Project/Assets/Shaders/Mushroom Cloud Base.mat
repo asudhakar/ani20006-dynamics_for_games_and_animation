@@ -91,7 +91,7 @@ Material:
     - _ColorScale: 1
     - _ColorScale_1: 1
     - _ColorScale_2: 1
-    - _ColorSpeed: -0.05
+    - _ColorSpeed: 0
     - _CullMode: 2
     - _CullModeForward: 2
     - _DepthOffsetEnable: 0
