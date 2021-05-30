@@ -165,7 +165,7 @@ MonoBehaviour:
     maximumLODLevelMode: 0
     maximumLODLevelQualityLevel: 0
     sssQualityMode: 0
-    sssQualityLevel: 0
+    sssQualityLevel: 2
     sssCustomSampleBudget: 20
     materialQuality: 0
   m_RenderingPathDefaultBakedOrCustomReflectionFrameSettings:
@@ -258,7 +258,7 @@ MonoBehaviour:
       cookieTexArraySize: 16
       planarReflectionAtlasSize: 1024
       reflectionProbeCacheSize: 32
-      reflectionCubemapSize: 256
+      reflectionCubemapSize: 512
       reflectionCacheCompressed: 1
       reflectionProbeFormat: 74
       skyReflectionSize: 512
